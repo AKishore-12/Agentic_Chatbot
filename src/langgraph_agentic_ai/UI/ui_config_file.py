@@ -16,3 +16,6 @@ class Config:
     
     def get_title(self):
         return self.config['DEFAULT'].get('PAGE_TITLE')
+
+    def get_news_time_frame(self):
+        return self.config['DEFAULT'].get('NEWS_TIME_FRAME').split(', ')
